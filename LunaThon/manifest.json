@@ -1,0 +1,16 @@
+{
+  "name": "Kiosk Assistant Extensions",
+  "description": "good Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab","scripting"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["popup/style.css"]
+    }
+  ]
+}
